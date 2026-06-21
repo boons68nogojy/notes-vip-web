@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐鱼体育 · 简明用户指引</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
+        body { background: #f0f5f7; color: #1f2b33; line-height: 1.6; padding: 20px; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+        .page-wrap { max-width: 960px; width: 100%; }
+        header.hero { background: linear-gradient(145deg, #0f4c5c, #1b6f7f); color: white; border-radius: 28px; padding: 2.2rem 2.2rem 2rem; margin-bottom: 2rem; box-shadow: 0 12px 24px rgba(8, 64, 72, 0.18); }
+        .hero h1 { font-size: 2.2rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+        .hero .sub { font-size: 1.05rem; opacity: 0.85; border-left: 4px solid #7fdbd1; padding-left: 1rem; margin: 0.8rem 0 1.4rem; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(2px); border-radius: 40px; padding: 0.3rem 1rem; font-size: 0.9rem; border: 1px solid rgba(255,255,255,0.25); }
+        .section-title { font-size: 1.6rem; font-weight: 600; margin: 2.2rem 0 1.2rem; color: #0b3f4a; position: relative; display: inline-block; }
+        .section-title::after { content: ''; display: block; width: 40%; height: 4px; background: #4ecdc4; border-radius: 4px; margin-top: 6px; }
+        .grid-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin: 1.4rem 0; }
+        .card { background: white; border-radius: 18px; padding: 1.6rem 1.4rem; box-shadow: 0 4px 12px rgba(0,20,25,0.06); border: 1px solid #dbe8ed; transition: 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0, 60, 70, 0.08); border-color: #9cd1cd; }
+        .card h3 { font-size: 1.2rem; color: #0f5b69; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px; }
+        .card p { color: #334952; font-size: 0.95rem; }
+        .icon-em { display: inline-block; width: 26px; text-align: center; font-size: 1.2rem; }
+        .tip-block { background: #e9f2f5; border-radius: 20px; padding: 1.2rem 1.8rem; margin: 1.8rem 0; border-left: 6px solid #4ecdc4; }
+        .tip-block strong { color: #07414e; }
+        .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.2rem 0 2rem; }
+        .faq-item { background: white; border-radius: 14px; padding: 1rem 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.02); border: 1px solid #d0e3e8; }
+        .faq-item q { font-weight: 500; color: #054452; display: block; margin-bottom: 0.3rem; font-size: 0.95rem; }
+        .faq-item p { font-size: 0.9rem; color: #2d4a54; }
+        .link-sentence { background: #fafffc; border-radius: 30px; padding: 1rem 1.8rem; display: inline-block; margin: 0.4rem 0 0.2rem; border: 1px solid #b6d5d4; }
+        .link-sentence a { color: #0b6b7a; font-weight: 600; text-decoration: none; border-bottom: 2px solid #7fdbd1; }
+        .link-sentence a:hover { color: #043641; border-bottom-color: #084b57; }
+        .footnote { margin-top: 3rem; font-size: 0.8rem; color: #5e7c84; text-align: center; border-top: 1px solid #cbe0e5; padding-top: 1.8rem; }
+        .btn-ghost { display: inline-block; background: transparent; border: 2px solid #4ecdc4; color: #07414e; border-radius: 60px; padding: 0.5rem 1.6rem; font-weight: 500; font-size: 0.9rem; transition: 0.2s; text-decoration: none; }
+        .btn-ghost:hover { background: #4ecdc4; color: #0b3842; }
+        @media (max-width: 640px) {
+            body { padding: 12px; }
+            header.hero { padding: 1.6rem; }
+            .hero h1 { font-size: 1.8rem; }
+            .grid-cards { gap: 0.8rem; }
+            .card { padding: 1.2rem; }
+            .section-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!-- HERO: 简明指南 -->
+    <header class="hero">
+        <h1>乐鱼体育 · 使用说明</h1>
+        <div class="sub">一份清晰的向导，帮助你快速了解平台功能与访问方式</div>
+        <span class="badge">📘 用户指引 · 2025</span>
+    </header>
+
+    <!-- 摘要 + 亮点卡片 (产品说明) -->
+    <h2 class="section-title">📌 核心摘要</h2>
+    <p style="font-size:1.05rem; margin-bottom:0.2rem; background: white; padding: 0.6rem 1.2rem; border-radius: 60px; display: inline-block; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">乐鱼体育是一个以体育赛事信息整合为主的平台，提供实时数据、赛事浏览与内容更新服务。本页从实际使用角度整理要点，帮助新用户快速上手。</p>
+
+    <div class="grid-cards">
+        <div class="card">
+            <h3><span class="icon-em">⚡</span> 实时数据</h3>
+            <p>覆盖主流联赛与热门赛事，比分、赛程、统计信息持续更新，方便追踪动态。</p>
+        </div>
+        <div class="card">
+            <h3><span class="icon-em">🧭</span> 清晰导航</h3>
+            <p>页面分类明确，赛事、资讯、榜单等模块一目了然，减少查找成本。</p>
+        </div>
+        <div class="card">
+            <h3><span class="icon-em">📱</span> 移动适配</h3>
+            <p>针对手机与平板优化，界面布局合理，触控操作顺畅，随时随地浏览。</p>
+        </div>
+        <div class="card">
+            <h3><span class="icon-em">🔄</span> 内容更新</h3>
+            <p>平台定期维护信息与数据，保持内容时效性，用户可获取较新的资讯。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 + 可信说明 -->
+    <h2 class="section-title">📋 使用建议</h2>
+    <div class="grid-cards" style="grid-template-columns: 1fr 1fr;">
+        <div class="card" style="background: #f3fafc;">
+            <h3>🔹 初次访问</h3>
+            <p>建议先浏览首页分类与热门推荐，熟悉信息排布方式。如遇到加载延迟，可尝试刷新或更换网络环境。</p>
+        </div>
+        <div class="card" style="background: #f3fafc;">
+            <h3>🔸 日常使用</h3>
+            <p>将常用赛事或频道加入收藏（浏览器书签），可快速回到关注页面。关注公告区域可了解最新调整。</p>
+        </div>
+    </div>
+
+    <div class="tip-block">
+        <strong>📎 可信但克制的访问说明</strong><br>
+        平台提供体育相关内容，所有数据均来自公开或授权渠道。请通过安全的网络环境访问，并注意保护个人账户信息。如有疑问，建议参考平台内帮助说明或联系客服渠道。<br>
+        <span style="display: inline-block; margin-top: 10px;">👉 想要直接了解？这里有一个可靠的访问入口：
+            <span class="link-sentence" style="background: transparent; border: none; padding: 0; margin: 0 0 0 6px;">
+                通过 <a href="https://vip-web-leyu.com.cn">乐鱼体育</a> 即可进入平台首页，浏览最新赛事内容。
+            </span>
+        </span>
+    </div>
+
+    <!-- 场景列举 (替换传统特点) -->
+    <h2 class="section-title">🏟️ 典型使用场景</h2>
+    <div class="grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+        <div class="card"><h3>📊 赛前分析</h3><p>查阅近期对阵记录与数据走势，辅助了解队伍状态。</p></div>
+        <div class="card"><h3>⏱️ 实时跟进</h3><p>比赛进行时刷新比分与事件，不错过关键节点。</p></div>
+        <div class="card"><h3>📰 资讯阅读</h3><p>浏览赛事相关新闻与综述，获取赛后观点。</p></div>
+        <div class="card"><h3>🏆 排名观察</h3><p>查看联赛积分榜、射手榜等榜单，掌握竞争格局。</p></div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <h2 class="section-title">❓ 常见问题摘要</h2>
+    <div class="faq-grid">
+        <div class="faq-item">
+            <q>页面打不开或加载慢怎么办？</q>
+            <p>尝试切换网络（WiFi/移动数据）或刷新页面；也可以稍后再试，偶尔会有瞬时波动。</p>
+        </div>
+        <div class="faq-item">
+            <q>如何快速找到某场比赛？</q>
+            <p>使用页面内的搜索功能或按联赛/日期筛选，也可直接浏览「热门」板块。</p>
+        </div>
+        <div class="faq-item">
+            <q>是否需要注册才能浏览？</q>
+            <p>大部分内容可直接查看，部分互动功能可能需要注册，具体以平台提示为准。</p>
+        </div>
+        <div class="faq-item">
+            <q>数据更新频率怎么样？</q>
+            <p>基础数据（比分、时间）通常实时或接近实时更新，深度统计会有短暂延迟。</p>
+        </div>
+    </div>
+
+    <!-- 温和的链接再出现 (句子里自然嵌入)  -->
+    <div style="background: #dceef2; border-radius: 40px; padding: 0.9rem 1.8rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1rem; margin: 2rem 0 1.2rem;">
+        <span style="font-weight: 500; color: #06323d;">🔗 快捷入口</span>
+        <span>如果你希望直接访问平台，推荐使用 <a href="https://vip-web-leyu.com.cn" style="color: #074f5e; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #4ecdc4;">乐鱼体育</a> 作为主要地址。</span>
+        <span style="font-size:0.9rem; opacity:0.7;">（请确保网络畅通）</span>
+    </div>
+
+    <!-- 页脚声明 -->
+    <div class="footnote">
+        本页面为产品说明式介绍，内容仅供参考。请遵守当地法律法规，合理使用网络服务。<br>
+        乐鱼体育 · 简明指引 | 最后更新：2025
+    </div>
+
+</div>
+</body>
+</html>
